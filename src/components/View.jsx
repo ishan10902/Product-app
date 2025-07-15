@@ -2,56 +2,63 @@ import React, { useState } from 'react'
 import BarNav from './BarNav'
 
 const View = () => {
-    const[products,changeProduct]=useState(
+    const [products, changeProduct] = useState(
         [
-            {"product":"iphone","description":"houseuse","poster":"https://m.media-amazon.com/images/I/61Ony8rgwEL._SX679_.jpg"},
-            {"product":"ipad","description":"electronics","poster":"https://m.media-amazon.com/images/I/814P0ojHArL._SL1500_.jpg"},
-            {"product":"macbook","description":"laptop","poster":"https://m.media-amazon.com/images/I/71sKGiKAu1L._SX679_.jpg"},
-            {"product":"apple watch","description":"watch","poster":"https://m.media-amazon.com/images/I/61MVBqkV5YL._SL1500_.jpg"},
-            {"product":"earbud","description":"eletronic","poster":"https://m.media-amazon.com/images/I/51oMWaW7tKL._SX679_.jpg"},
+            { "product": "iphone", "description": "houseuse", "poster": "https://m.media-amazon.com/images/I/61Ony8rgwEL._SX679_.jpg" },
+            { "product": "ipad", "description": "electronics", "poster": "https://m.media-amazon.com/images/I/814P0ojHArL._SL1500_.jpg" },
+            { "product": "macbook", "description": "laptop", "poster": "https://m.media-amazon.com/images/I/71sKGiKAu1L._SX679_.jpg" },
+            { "product": "apple watch", "description": "watch", "poster": "https://m.media-amazon.com/images/I/61MVBqkV5YL._SL1500_.jpg" },
+            { "product": "earbud", "description": "eletronic", "poster": "https://m.media-amazon.com/images/I/51oMWaW7tKL._SX679_.jpg" },
+            { "product": "airpods", "description": "wireless earphones", "poster": "https://m.media-amazon.com/images/I/61SUj2aKoEL._SL1500_.jpg" },
+            { "product": "apple tv", "description": "media streaming", "poster": "https://m.media-amazon.com/images/I/71pEQi2sX3L._SX679_.jpg" },
+            { "product": "iphone case", "description": "accessory", "poster": "https://m.media-amazon.com/images/I/611dVDFJqKL._SX522_.jpg" },
+            { "product": "magic mouse", "description": "wireless mouse", "poster": "https://m.media-amazon.com/images/I/51uzMSkm-CL._SL1500_.jpg" },
+            { "product": "apple keyboard", "description": "keyboard", "poster": "https://m.media-amazon.com/images/I/61afA+507eL._SX679_.jpg" }
+
+
         ]
     )
-  return (
-    
-    <div>
-        <BarNav/>
-        <h3 align="center">Product Image</h3>
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <div className="row">
-                        {products.map(
-                            (value,index)=>{
-                                return(
-                                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                            <br></br>
-                                <div class="card">
-                                    <img src={value.poster} class="card-img-top" alt="..."/>
-                                        <div class="card-body">
-                                            <h5 class="card-title">{value.product}</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+    return (
+
+        <div>
+            <BarNav />
+            <h1 align="center">PRODUCT IMAGE</h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <div className="row">
+                            {products.map(
+                                (value, index) => {
+                                    return (
+                                        <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                            <br></br>
+                                            <div class="card">
+                                                <img src={value.poster} class="card-img-top" alt="..." />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{value.product}</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                </div>
-                        </div>  
-                                )
-                            }
-                        )}
-                    
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                                    )
+                                }
+                            )}
+
+
+
+
+
+
+
+
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default View

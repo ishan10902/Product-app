@@ -5,7 +5,7 @@ const Delete = () => {
   return (
     <div>
         <BarNav/>
-        <h3 align="center">Delete Product</h3>
+        <h1 align="center">DELETE PRODUCT</h1>
         <div className="container">
             <div className="row">
                 <div className="col">

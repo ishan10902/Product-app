@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const BarNav = () => {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-danger" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg" style={{ backgroundColor: '#003366' }}>
 
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
@@ -14,16 +14,16 @@ const BarNav = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+                                <Link class="nav-link active" aria-current="page" to="/" style={{ color: 'white' }}>Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/search">Search</Link>
+                                <Link class="nav-link" to="/search" style={{ color: 'white' }}>Search</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/delete">Delete</Link>
+                                <Link class="nav-link" to="/delete" style={{ color: 'white' }}>Delete</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/view">Image</Link>
+                                <Link class="nav-link" to="/view" style={{ color: 'white' }}>Image</Link>
                                 
                             </li>
                         </ul>

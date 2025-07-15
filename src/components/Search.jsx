@@ -5,7 +5,7 @@ const Search = () => {
   return (
     <div>
         <BarNav/>
-        <h3 align="center">Product Search</h3>
+        <h1 align="center">SEARCH PRODUCT</h1>
         <div className="container">
             <div className="row">
                 <div className="col">
